@@ -80,13 +80,13 @@ def selamla(mesaj):
 
     if mesaj.lower() == "merhaba":
         if 5 <= saat < 12:
-            return "Günaydın 😊"
+            return "Günaydın "
         elif 12 <= saat < 18:
-            return "Tünaydın 😊"
+            return "Tünaydın "
         elif 18 <= saat < 22:
-            return "İyi akşamlar 😊"
+            return "İyi akşamlar "
         else:
-            return "İyi geceler 🌙"
+            return "İyi geceler "
     else:
         return "Lütfen 'merhaba' yazınız."
 
