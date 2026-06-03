@@ -1,8 +1,0 @@
-import requests
-from bs4 import BeautifulSoup
-url= " urul gir " 
-response=requests.get(url)
-soup=BeautifulSoup(response.text,"html.parser")
-links=soup.find_all("p")
-for p in links:
-    print(p.text)
