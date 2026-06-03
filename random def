@@ -1,7 +1,0 @@
-import random
-def cod(list):
-    random.shuffle(list)
-    return list
-soap_opera=[23,43,54,3,23,23]
-new=cod(soap_opera.copy())
-print(new)
