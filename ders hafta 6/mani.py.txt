@@ -1,0 +1,58 @@
+class hesapmakinesi:
+    def __init__(self,say1,say2):
+        self.sayi1 = say1
+        self.say2 = say2
+        self.hafiza=[]
+
+    def topla(self):
+        sonuc=self.sayi1+self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+    def carp(self):
+        sonuc=self.sayi1*self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+    def cikarma(self):                                      #BURAK ŞAHİN TARAFINDAN KODLANDI
+        sonuc=self.sayi1-self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+    def bolme(self):
+        sonuc=self.sayi1/self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+class carpiptablosu:
+    def __init__(self,say1):
+        self.say1 = say1
+        self.tablohaf=[]
+    def tablosu(self):
+        for sayi in range(1,11,1):
+            sonuc=self.say1 * sayi
+            self.tablohaf.append(sonuc)
+    def yazdir(self):
+        for sayi in range(1,11,1):
+            print(str(self.say1)+"x"+str(sayi)+"="+str(self.tablohaf[sayi-1])+"\n")
+            print(f"{self.say1} x {str(sayi)} = {(self.tablohaf[sayi - 1])} \n") #AYRICA BÖYLE YAZILABİLİR.
+
+a=hesapmakinesi(1,2)
+a.topla()
+a.carp()
+a.bolme()
+a.cikarma()
+B=hesapmakinesi(7,5)
+B.topla()
+B.carp()
+B.bolme()
+B.cikarma()
+yazar=B.hafiza
+print(yazar)
+B.hafiza.sort()
+B.hafiza.reverse()
+AA=B.hafiza.pop()             
+print(B.hafiza)
+print("["+ str(AA) +"]")
+B.hafiza.clear()
+print(B.hafiza)
+tablo=carpiptablosu(3)
+tablo.tablosu()
+print(tablo.tablohaf)
+tablo.yazdir()

@@ -1,0 +1,24 @@
+<script>
+let a=['gulsenem','hurlika','burak'];
+sec=prompt("SecimYap");
+let yaz=" ";
+if(sec=='gulsenem'){
+	for(let i=0;i<a[0].length;i++){
+	alert(a[0][i]);
+	}
+}
+else if(sec=='hurlika'){
+	for(let i=0;i<a[1].length;i++){
+	yaz=yaz+a[1][i];
+	alert(yaz);
+	}	//BURAK ŞAHİN TARFINDAN KODLANDI
+}
+else if (sec=='burak'){
+	for(let i=a[2].length;0<i;i--){
+	alert(a[2].slice(0,i));
+	}
+}
+else {
+	alert("yanlis secim");
+}
+</script>

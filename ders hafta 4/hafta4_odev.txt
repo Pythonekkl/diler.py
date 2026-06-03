@@ -1,0 +1,43 @@
+gulsenem2=["12:16 ABD ve İsrail İran'a saldırdı! Netanyahu'dan ilk açıklama",
+"11:42 İsrail ve ABD İran'ı vurdu! Hamaney nereye götürüldü?",
+"11:12 Hem saldırganlar, hem korkaklar! Terörist İsrail, Lübnan sınırına askeri birlik konuşlandırdı",
+"11:05 THY'den kritik İran kararı: Uçuşlar hakkında açıklama",
+"10:49 Engelli ve eski hükümlüler için hibe desteği başvuruları başladı",
+"10:30 Terörist İsrail İran'a saldırdı! Azizi: İsrail saldırılarına misilleme yapacağız",
+"10:18 Yol geçen hanı olduk! Edirne ve Kırklareli'nde 11 düzensiz göçmen yakalandı"]
+
+for gul in gulsenem2:
+  ayir=gul.split(' ')
+  yazıcı=' '
+  for i in range(len(ayir)):
+    if i==0:                   
+      pass
+    elif ayir[i].startswith('THY'):
+      ayir[i]="TKMY" #Burada thy'den olan elamanı TKMY olarak değiştiriyor
+      yazıcı=yazıcı+" "+str(ayir[i])
+    else:
+      yazıcı=yazıcı+" "+str(ayir[i])
+  print(yazıcı)
+##.replace komutu daha sonra eklenecektir 28feb2026 01.51
+##03mart2026 06.33
+
+gulsenem2=["12:16 ABD ve İsrail İran'a saldırdı! Netanyahu'dan ilk açıklama",
+"11:42 İsrail ve ABD İran'ı vurdu! Hamaney nereye götürüldü?",
+"11:12 Hem saldırganlar, hem korkaklar! Terörist İsrail, Lübnan sınırına askeri birlik konuşlandırdı",
+"11:05 THY'den kritik İran kararı: Uçuşlar hakkında açıklama",
+"10:49 Engelli ve eski hükümlüler için hibe desteği başvuruları başladı",
+"10:30 Terörist İsrail İran'a saldırdı! Azizi: İsrail saldırılarına misilleme yapacağız",
+"10:18 Yol geçen hanı olduk! Edirne ve Kırklareli'nde 11 düzensiz göçmen yakalandı"]
+
+for gul in gulsenem2:
+  ayir=gul.split(' ')
+  yazıcı=' '
+  for i in range(len(ayir)):
+    if i==0:                      #BURAK ŞAHİN TARAFINDAN KODLANDI
+      pass
+    elif ayir[i].startswith('THY'):
+      ayir[i]=ayir[i].replace("THY'den", "TKMY") #.replace ile bir elemana atamamız lazım.
+      yazıcı=yazıcı+" "+str(ayir[i])
+    else:
+      yazıcı=yazıcı+" "+str(ayir[i])
+  print(yazıcı)

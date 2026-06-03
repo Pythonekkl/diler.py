@@ -1,0 +1,10 @@
+function isimGoster()
+{
+       var isim="Asya Yevropa ";
+    alert(isim);
+}
+isimGoster(); 
+if( 15 > 10) {
+    var sayi = 17;
+}
+alert(sayi);

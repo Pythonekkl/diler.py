@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1>Gunun Tarihi</h1>
+<p id="gununTarihi"></p>
+
+<script type="text/javascript">
+    /* Birden fazla satırdan oluşan yorumlar için bu güzel.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.  */
+    document.getElementById("gununTarihi").innerHTML = Date();
+</script>
+<h1> santa claus Kodladi </h1>
+</body>
+</html>

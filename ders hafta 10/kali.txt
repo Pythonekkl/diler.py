@@ -1,0 +1,14 @@
+cd ~/Desktop
+mikdir Azizbek_DDoS
+touch DDoS.py
+nano DDoS.py
+while p < 1 or p > len(params):
+    print "\nFound %i parameters to attack. Please select number of parameter to use:\n" % len(params)
+    for param in params:
+        print params.index(param)+1, ",", param
+    try:
+        p = int(raw_input("\n> "))
+    except:
+        pass
+chat +x DDoS.py
+./DDoS.py

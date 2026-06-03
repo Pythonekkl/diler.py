@@ -1,0 +1,25 @@
+ogrenciler=[{
+    "isim":"Ayşe",
+    "yas":20,
+    "cinsiyet":"Kadın",
+    "dogum_yeri":"Ankara",
+},
+{
+    "isim":"Serhat",
+    "yas":20,                  
+    "cinsiyet":"Erkek",
+    "dogum_yeri":"İstanbul",
+},
+{
+    "isim":"Aslı",
+    "yas":18,
+    "cinsiyet":"Kadın",
+    "dogum_yeri":"Ankara",
+},
+{
+    "isim":"Veli",
+    "yas":17,
+    "cinsiyet":"Erkek",
+    "dogum_yeri":"İzmir",
+}
+]

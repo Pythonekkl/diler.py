@@ -1,0 +1,62 @@
+kampus=[[[[{'isim':'Nisa',
+            'yas':19,
+            'adr':'ist'},
+           {'isim':'Burak',
+            'yas':20,
+            'adr':'ist'},
+           {'isim':'Mehmet',
+            'yas':21,
+            'adr':'ist'},]],
+
+[[{'isim':'ali',
+            'yas':19,
+            'adr':'ist'},
+           {'isim':'hasan',
+            'yas':20,
+            'adr':'ist'},
+           {'isim':'eda',
+            'yas':21,
+            'adr':'ist'},]]
+
+         ]
+        ,
+[[[{'isim':'elif',
+            'yas':19,
+            'adr':'ist'},
+           {'isim':'cemal',
+            'yas':20,
+            'adr':'ist'},
+           {'isim':'abbas',
+            'yas':21,
+            'adr':'ist'},]],
+
+[[{'isim':'veli',
+            'yas':19,
+            'adr':'ist'},
+           {'isim':'hüseyin',
+            'yas':20,
+            'adr':'ist'},
+           {'isim':'nehir',
+            'yas':21,
+            'adr':'ist'},]]
+
+         ]
+        ]
+sayac=0
+for bina in kampus:
+    print('--------------?____________----bina------_______-----______________-----',sayac)
+    for kat in bina:
+        print('------------------kat-----------------',sayac)
+
+        for sinif in kat:   #BURAK ŞAHİN TARAFINDAN KODLANDI
+
+            print('------sınıf-----------------',sayac)
+            for masa in sinif:
+
+                print('===masa=====',sayac)
+                for ogr in sinif:
+                    print(ogr['isim'])
+                    sayac+=1
+
+
+print(sayac)
