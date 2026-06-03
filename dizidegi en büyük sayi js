@@ -1,9 +1,0 @@
-let dizi=[12,32,43,54,65,23]
-let en_buyuk=dizi[0]
-for(let i=1;i<=dizi.length;i++ ){
-   if(dizi[i]>en_buyuk){
-  console.log(dizi[i])
-    en_buyuk=dizi[i];
-   }
-}    
-console.log("en buyuk",en_buyuk);
