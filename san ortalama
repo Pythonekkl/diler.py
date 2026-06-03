@@ -1,4 +1,0 @@
-sayi1=input("sayi 1 girin >")
-sayi2=input("sayi 2 girin >")
-ortalama = (int(sayi1)+int(sayi2))/2
-print ("sayini tam ortalamasi \n:{0} > ",format(ortalama))
