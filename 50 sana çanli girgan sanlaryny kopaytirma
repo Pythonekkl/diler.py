@@ -1,7 +1,0 @@
-veri=int(input("bir sayi girin"))
-while veri<50: 
- if veri<50:
-  veri+=1
-  print("veri sonucu",veri)
-
-
