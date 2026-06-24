@@ -6,7 +6,7 @@ for i in range(6):
     sec =input("secilecek mahkum adını oku")
     kurban_listesi.append(sec)
     print("{} sahneye çıkarıldı".format(sec))
-silah_patladi=0 #BURAK ŞAHİN TARAFINDAN YAZILDI
+silah_patladi=0 
 sayac=1 #çünkü sayac indisi tutmuyor
 r=random.randint(1,6)
 print("ss subayı silahını çıkardı ve rus ruleti için hazırladı.")
